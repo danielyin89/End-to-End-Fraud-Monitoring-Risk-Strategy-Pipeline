@@ -23,6 +23,9 @@ python src/risk_strategy.py
 * **Audit & governance**: Shipped **reason codes** and an **alert playbook** for operational auditability.
 
 ## 📊 2. The "Money Chart" (Operating Point Selection)
+
+![Daily Transaction Risk Score Distribution](assets/money_chart.png)
+
 To translate model performance into business value, I evaluated the financial trade-off under a fixed **manual review capacity of 5,000/day**:
 * **Selected Operating Point**: TopK = 5,000.
 * **Net Value**: $\approx$ 5,143 (illustrative units).
