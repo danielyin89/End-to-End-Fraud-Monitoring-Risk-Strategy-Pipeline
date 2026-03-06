@@ -1,0 +1,6 @@
+metric,value,notes
+total_transactions_processed,500000,Daily ingestion volume
+flagged_for_review,4982,Safely within 5,000/day capacity limit
+auto_blocked,1245,High-risk tail anomalies (UDAAP compliant)
+null_merchant_exceptions,87,Requires upstream data engineering fix
+overall_leakage_prevented_usd,34500.00,Estimated daily savings
