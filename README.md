@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 # 2. Execute the risk strategy pipeline
 python src/risk_strategy.py
-
+```
 ## 🚀 1. Strategic Deliverables (What I Delivered)
 * **Leakage-safe baseline**: Implemented a strict **time-based split** and engineered velocity/entity features to handle noisy identity coverage.
 * **Operations-ready decisioning**: Converted raw model scores into actionable **Block / Review / Allow** policies.
