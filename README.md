@@ -1,7 +1,19 @@
 # End-to-End Fraud Monitoring & Risk Strategy Pipeline
 
-## 📌 Project Overview
-This project implements a production-style fraud detection framework using the IEEE-CIS dataset (~590K transactions). Unlike standard Kaggle notebooks, this pipeline focuses on **Deliverable Stability**, **Operational Capacity**, and **UDAAP Compliance**.
+*A production-style data QA and fraud detection framework focusing on Deliverable Stability, Operational Capacity, and UDAAP Compliance.*
+
+## ⏱️ Quick Proof (30-Second Executive Summary)
+- **SQL Controls**: Window functions + point-in-time features engineered to prevent leakage (see `/sql/data_pipeline.sql`).
+- **Python Automation**: Automated QA checks, exception report generation, and `try-except` guardrails (see `/src/risk_strategy.py`).
+- **Audit-Ready Outputs**: `/outputs/exceptions_sample.csv` and `/outputs/qa_summary_sample.csv`.
+
+## ⚙️ How to Run
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Execute the risk strategy pipeline
+python src/risk_strategy.py
 
 ## 🚀 1. Strategic Deliverables (What I Delivered)
 * **Leakage-safe baseline**: Implemented a strict **time-based split** and engineered velocity/entity features to handle noisy identity coverage.
