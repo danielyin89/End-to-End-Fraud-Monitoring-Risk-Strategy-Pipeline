@@ -7,6 +7,14 @@
 - **Python Automation**: Automated QA checks, exception report generation, and `try-except` guardrails (see `/src/risk_strategy.py`).
 - **Audit-Ready Outputs**: `/outputs/exceptions_sample.csv` and `/outputs/qa_summary_sample.csv`.
 
+## 📖 Mini Data Dictionary
+- `transaction_id`: Unique identifier for the event.
+- `timestamp`: Event time used for point-in-time features and embargo validation.
+- `amount`: Transaction value used for variance and leakage checks.
+- `risk_score`: ML model output (0.0-1.0) used for capacity-aware triage.
+- `decision`: `APPROVE`, `REVIEW`, or `BLOCK` (based on strict operational thresholds).
+- `reason_code`: Standardized taxonomy for operations escalations (e.g., `ERR_DUPLICATE_TXN`).
+  
 ## ⚙️ How to Run
 ```bash
 # 1. Install dependencies
