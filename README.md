@@ -1,7 +1,7 @@
 # End-to-End Fraud Monitoring & Risk Strategy Pipeline
 
 ## 📌 Project Overview
-This project implements a production-ready fraud detection framework using the IEEE-CIS dataset (~590K transactions). Unlike standard Kaggle notebooks, this pipeline focuses on **Deliverable Stability**, **Operational Capacity**, and **UDAAP Compliance**.
+This project implements a production-style fraud detection framework using the IEEE-CIS dataset (~590K transactions). Unlike standard Kaggle notebooks, this pipeline focuses on **Deliverable Stability**, **Operational Capacity**, and **UDAAP Compliance**.
 
 ## 🚀 1. Strategic Deliverables (What I Delivered)
 * **Leakage-safe baseline**: Implemented a strict **time-based split** and engineered velocity/entity features to handle noisy identity coverage.
